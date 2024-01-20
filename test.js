@@ -16,6 +16,6 @@ if (isAlbanianName("Adelina")) {
   console.log("SUCCESS");
 }
 
-if (!isAlbanianName("John")) {
+if (isAlbanianName("John")) {
   console.error("ERROR: JOHN is not an Albanian Name.");
 }
