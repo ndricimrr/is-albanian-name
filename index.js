@@ -30,6 +30,23 @@ const someNamesTest = [
 
 const someNamesTestList = ["Adelina", "Bardhyl", "Elira", "Gentian"];
 
+/**
+ * A simple function that converts a given word in string format into title case
+ * @param {string} string string 1 word to convert
+ * @returns a string word converted to title case
+ */
+function toTitleCase(string) {
+  return string.replace(
+    /\w\S*/g,
+    (txt) => txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase()
+  );
+}
+
 module.exports = function isAlbanianName(name) {
-  return someNamesTestList.includes(name);
+  if (typeof name === "string") {
+    return someNamesTestList.includes(toTitleCase(name));
+  }
+  throw console.error(
+    "Error: Only [string] supported but [" + typeof name + "] given"
+  );
 };
