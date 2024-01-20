@@ -30,6 +30,8 @@ const someNamesTest = [
 
 const someNamesTestList = ["Adelina", "Bardhyl", "Elira", "Gentian"];
 
+const all_names = require("albanian-names-dataset/all_names.json");
+
 /**
  * A simple function that converts a given word in string format into title case
  * @param {string} string string 1 word to convert
@@ -44,9 +46,9 @@ function toTitleCase(string) {
 
 module.exports = function isAlbanianName(name) {
   if (typeof name === "string") {
-    return someNamesTestList.includes(toTitleCase(name));
+    return all_names.includes(toTitleCase(name));
   }
-  throw console.error(
+  throw new Error(
     "Error: Only [string] supported but [" + typeof name + "] given"
   );
 };

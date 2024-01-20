@@ -19,3 +19,9 @@ if (isAlbanianName("Adelina")) {
 if (isAlbanianName("John")) {
   console.error("ERROR: JOHN is not an Albanian Name.");
 }
+
+try {
+  isAlbanianName(2511);
+} catch (error) {
+  console.log("SUCCESS CATCH ERROR: NUMBER GIVEN");
+}

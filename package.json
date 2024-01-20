@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ndricimrr/is-albanian-name/issues"
   },
-  "homepage": "https://github.com/ndricimrr/is-albanian-name#readme"
+  "homepage": "https://github.com/ndricimrr/is-albanian-name#readme",
+  "dependencies": {
+    "albanian-names-dataset": "^0.0.2"
+  }
 }
