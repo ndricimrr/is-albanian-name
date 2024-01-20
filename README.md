@@ -1,4 +1,5 @@
 # is-albanian-name
+
 A small repo to check if a given name is albanian
 
 # Instructions
@@ -15,3 +16,7 @@ const testName = "Bardhyl";
 const isTrue = isAlbanianName(testName);
 console.log(isTrue);
 ```
+
+# Development / Contributions
+
+Run `npm run test` to check if all is working well.
