@@ -2,15 +2,19 @@
 
 var isAlbanianName = require("./");
 
-console.log();
-
 const list = ["Bardhyl", "Elira", "Adelina"];
 if (
   isAlbanianName(list[0]) &&
   isAlbanianName(list[1]) &&
   isAlbanianName(list[2])
 ) {
-  console.log("Success: Test Case 1: Generic albanian names");
+  console.log(
+    "\x1b[32m\u2713\x1b[0m",
+    "Test Case 1: Generic albanian names:",
+    list[0],
+    list[1],
+    list[2]
+  );
 } else {
   console.error(
     "FAIL: ",
@@ -29,5 +33,9 @@ try {
   console.error("ERROR: Numbers not accepted as input");
   process.exit(1);
 } catch (error) {
-  console.log("Succesfully caught expected thrown error: ", error.message);
+  console.log(
+    "\x1b[32m\u2713\x1b[0m",
+    "Test Case 2: Succesfully caught expected thrown error => ",
+    error.message
+  );
 }
