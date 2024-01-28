@@ -26,5 +26,11 @@
   },
   "files": [
     "index.js"
+  ],
+  "contributors": [
+    {
+      "name": "ndricimrr",
+      "url": "https://github.com/ndricimrr"
+    }
   ]
 }
