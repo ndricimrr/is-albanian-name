@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/ndricimrr/is-albanian-name#readme",
   "dependencies": {
-    "albanian-names-dataset": "^0.0.7"
+    "albanian-names-dataset": "^0.0.8"
   },
   "files": [
     "index.js"

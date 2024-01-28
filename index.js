@@ -1,6 +1,6 @@
 "use strict";
 
-const list = require("albanian-names-dataset");
+const list = require("albanian-names-dataset/all_names.json");
 
 /**
  * A simple function that converts a given word in string format into title case
@@ -14,11 +14,9 @@ function toTitleCase(string) {
   );
 }
 
-console.log("LIST[1]= ", list.all_names);
-
 module.exports = function isAlbanianName(name) {
   if (typeof name === "string") {
-    return list.all_names.includes(toTitleCase(name));
+    return list.includes(toTitleCase(name));
   }
   throw new Error(
     "Error: Only [string] supported but [" + typeof name + "] given"
