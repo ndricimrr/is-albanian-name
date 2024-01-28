@@ -4,24 +4,30 @@ var isAlbanianName = require("./");
 
 console.log();
 
-if (isAlbanianName("Bardhyl")) {
-  console.log("SUCCESS");
-}
-
-if (isAlbanianName("Elira")) {
-  console.log("SUCCESS");
-}
-
-if (isAlbanianName("Adelina")) {
-  console.log("SUCCESS");
-}
-
-if (isAlbanianName("John")) {
-  console.error("ERROR: JOHN is not an Albanian Name.");
+const list = ["Bardhyl", "Elira", "Adelina"];
+if (
+  isAlbanianName(list[0]) &&
+  isAlbanianName(list[1]) &&
+  isAlbanianName(list[2])
+) {
+  console.log("Success: Test Case 1: Generic albanian names");
+} else {
+  console.error(
+    "FAIL: ",
+    list[0] +
+      ", " +
+      list[1] +
+      ", " +
+      list[2] +
+      " should be on the list but not found"
+  );
+  process.exit(1);
 }
 
 try {
   isAlbanianName(2511);
+  console.error("ERROR: Numbers not accepted as input");
+  process.exit(1);
 } catch (error) {
-  console.log("SUCCESS CATCH ERROR: NUMBER GIVEN");
+  console.log("Succesfully caught expected thrown error: ", error.message);
 }

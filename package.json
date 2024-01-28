@@ -1,6 +1,6 @@
 {
   "name": "is-albanian-name",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A package used to find out if a given name is albanian or not",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/ndricimrr/is-albanian-name#readme",
   "dependencies": {
-    "albanian-names-dataset": "^0.0.2"
-  }
+    "albanian-names-dataset": "^0.0.7"
+  },
+  "files": [
+    "index.js"
+  ]
 }
