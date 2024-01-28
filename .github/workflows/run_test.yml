@@ -15,5 +15,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Run the function against some test cases
         run: npm run test
