@@ -14,8 +14,9 @@ function toTitleCase(string) {
   );
 }
 
+console.log("LIST[1]= ", list.all_names);
+
 module.exports = function isAlbanianName(name) {
-  console.log("LIST[1]= ", list.all_names[1]);
   if (typeof name === "string") {
     return list.all_names.includes(toTitleCase(name));
   }
