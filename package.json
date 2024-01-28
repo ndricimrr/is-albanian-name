@@ -1,6 +1,6 @@
 {
   "name": "is-albanian-name",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A package used to find out if a given name is albanian or not",
   "main": "index.js",
   "scripts": {
