@@ -1,6 +1,6 @@
 # is-albanian-name
 
-A small repo to check if a given name is albanian
+A small function to check if a given name is albanian
 
 # Instructions
 
