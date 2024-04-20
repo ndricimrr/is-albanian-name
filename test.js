@@ -1,6 +1,6 @@
 "use strict";
 
-var isAlbanianName = require("./");
+var isAlbanianName = require("./").default;
 
 const list = ["Bardhyl", "Elira", "Adelina"];
 if (

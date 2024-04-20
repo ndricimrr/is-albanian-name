@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<style>
+    #yes {
+        display: none;
+    }
+
+    #none {
+        display: none;
+    }
+</style>
+<body>
+    <div>
+        <button onclick="checkIsAlbanian()">Check</button>
+        <input id="nameField"  maxlength="20"  value="" type="text">Insert Name to Check Here</input>
+        <span id="yes">&#x2705;</span>
+        <span id="no">❌</span>
+    </div>
+    
+<script src="index-esm.js"></script>
+<script>
+
+    // var isAlbanianName = require("./");
+    function checkIsAlbanian(){
+        const name = document.getElementById('nameField').value;
+        const yesResult = document.getElementById('yes');
+        const noResult = document.getElementById('no');
+        if (name !== ''){
+            if (isAlbanianName(name)){
+                yesResult.style.display = 'block';
+                noResult.style.display = 'none';
+            } else {
+                yesResult.style.display = 'none';
+                noResult.style.display = 'block';
+            }
+        }
+      
+    }
+</script>
+
+</body>
+</html>
