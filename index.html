@@ -1,44 +1,165 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albanian Name Checker</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
 
-</head>
-<style>
-    #yes {
-        display: none;
-    }
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-    #none {
+      .container {
+        text-align: center;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        max-width: 600px;
+      }
+
+      .container-with-input {
+        text-align: left;
+        padding: 20px;
+        border: 2px solid #cccccc79;
+        border-radius: 10px;
+        max-width: 600px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 16px;
+        margin: 0 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: calc(100% - 90px); /* Adjust as needed */
+        max-width: 160px; /* Adjust as needed */
+      }
+
+      span {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+
+      #yes,
+      #no {
         display: none;
-    }
-</style>
-<body>
-    <div>
-        <button onclick="checkIsAlbanian()">Check</button>
-        <input id="nameField"  maxlength="20"  value="" type="text">Insert Name to Check Here</input>
-        <span id="yes">&#x2705;</span>
-        <span id="no">❌</span>
+      }
+
+      #yes.show,
+      #no.show {
+        display: inline;
+      }
+
+      .instructions {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .instructions code {
+        background-color: #f0f0f0;
+        padding: 2px 5px;
+        border-radius: 3px;
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+      }
+
+      footer a {
+        color: #007bff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="container">
+        <h2>Albanian Name Checker</h2>
+        <div class="instructions">
+          <p><strong>How to use:</strong></p>
+          <ol>
+            <li>Install the npm package: <code>npm install</code></li>
+            <br />
+            <li>
+              Import the npm package into your project: <br />
+              <code>import isAlbanianName from 'is-albanian-name'</code>
+            </li>
+            <br />
+            <li>
+              Use the function as needed:<br />
+              <code>
+                function check(name) { return isAlbanianName(name); }
+              </code>
+            </li>
+          </ol>
+        </div>
+        <div class="container-with-input">
+          <input
+            id="nameField"
+            maxlength="20"
+            placeholder="Insert Albanian Name"
+          />
+          <button onclick="checkIsAlbanian()">Check</button>
+          <span id="yes">&#x2705;</span>
+          <span id="no">❌</span>
+        </div>
+      </div>
+
+      <footer>
+        <a href="https://github.com/ndricimrr/is-albanian-name" target="_blank"
+          >GitHub Project</a
+        >
+        <a href="https://www.npmjs.com/package/is-albanian-name" target="_blank"
+          >NPM Package</a
+        >
+      </footer>
     </div>
-    
-<script src="index-esm.js"></script>
-<script>
 
-    // var isAlbanianName = require("./");
-    function checkIsAlbanian(){
-        const name = document.getElementById('nameField').value;
-        const yesResult = document.getElementById('yes');
-        const noResult = document.getElementById('no');
-        if (name !== ''){
-            if (isAlbanianName(name)){
-                yesResult.style.display = 'block';
-                noResult.style.display = 'none';
-            } else {
-                yesResult.style.display = 'none';
-                noResult.style.display = 'block';
-            }
+    <script src="index-esm.js"></script>
+    <script>
+      function checkIsAlbanian() {
+        const name = document.getElementById("nameField").value;
+        const yesResult = document.getElementById("yes");
+        const noResult = document.getElementById("no");
+        if (name !== "") {
+          if (isAlbanianName(name)) {
+            yesResult.classList.add("show");
+            noResult.classList.remove("show");
+          } else {
+            yesResult.classList.remove("show");
+            noResult.classList.add("show");
+          }
         }
-      
-    }
-</script>
-
-</body>
+      }
+    </script>
+  </body>
 </html>
