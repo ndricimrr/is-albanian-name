@@ -1,3 +1,6 @@
+[![Build Status](https://github.com/ndricimrr/is-albanian-name/actions/workflows/run_test.yml/badge.svg)](https://github.com/ndricimrr/is-albanian-name/actions/workflows/run_test.yml)
+[![REUSE status](https://api.reuse.software/badge/github.com/ndricimrr/is-albanian-name)](https://api.reuse.software/info/github.com/ndricimrr/is-albanian-name)
+
 # is-albanian-name
 
 A small function to check if a given name is albanian
