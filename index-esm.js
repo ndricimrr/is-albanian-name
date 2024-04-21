@@ -1,5 +1,11 @@
 "use strict";
 
+/*
+ * SPDX-FileCopyrightText: 2024 Ndricim Rrapi <ndricimrr@gmail.com>
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 const list = [
   "Abaz",
   "Abdi",
@@ -3016,7 +3022,7 @@ const list = [
   "Zheni",
   "Zhuljen",
   "Zhuljeta",
-  "Zhyljen"
+  "Zhyljen",
 ];
 
 /**
