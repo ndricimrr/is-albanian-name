@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "bundle-esm": "babel index.js --out-file index-esm.js"
+    "bundle": "node customESMbundler.js"
   },
   "repository": {
     "type": "git",

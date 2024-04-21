@@ -28,6 +28,7 @@ try {
     // Write the result into index-esm.js - to be used for browser native purposes
     try {
       fs.writeFileSync("index-esm.js", indexJSStringWithoutExport, "utf8");
+      console.log("\x1b[32m\u2713\x1b[0m", "Finished bundling to ESM");
     } catch (err) {
       console.error("Error writing to file 'index-esm' :", err);
     }
