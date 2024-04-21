@@ -1,11 +1,5 @@
 "use strict";
 
-/*
- * SPDX-FileCopyrightText: 2024 Ndricim Rrapi <ndricimrr@gmail.com>
- *
- * SPDX-License-Identifier: MIT
- */
-
 var isAlbanianName = require("./");
 
 const list = ["Bardhyl", "Elira", "Adelina"];
