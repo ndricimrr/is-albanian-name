@@ -3,6 +3,6 @@ Upstream-Name: is-albanian-name
 Upstream-Contact: Ndricim Rrapi <ndricimrr@gmail.com>
 Source: https://github.com/ndricimrr/is-albanian-name
 
-Files: \*
+Files: *
 Copyright: 2024 Ndricim Rrapi <ndricimrr@gmail.com>
 License: MIT
