@@ -1,11 +1,11 @@
 {
   "name": "is-albanian-name",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A package used to find out if a given name is albanian or not",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "bundle-esm": "babel index.js --out-file index-esm.js"
+    "bundle": "node customESMbundler.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "albanian-names-dataset": "^0.0.8"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index-esm.js"
   ],
   "contributors": [
     {
