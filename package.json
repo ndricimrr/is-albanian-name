@@ -1,6 +1,6 @@
 {
   "name": "is-albanian-name",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A package used to find out if a given name is albanian or not",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,8 @@
     "albanian-names-dataset": "^0.0.8"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index-esm.js"
   ],
   "contributors": [
     {
