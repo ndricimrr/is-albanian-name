@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: is-albanian-name
+Upstream-Contact: Ndricim Rrapi <ndricimrr@gmail.com>
+Source: https://github.com/ndricimrr/is-albanian-name
+
+Files: \*
+Copyright: 2024 Ndricim Rrapi <ndricimrr@gmail.com>
+License: MIT
