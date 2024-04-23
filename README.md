@@ -3,8 +3,6 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-yellow)](https://opensource.org/license/mit)
 ![NPM Published Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fndricimrr%2Fis-albanian-name%2Fmain%2Fpackage.json&query=%24.version&label=npm)
 
-https://img.shields.io/badge/any_text-you_like-blue
-
 # is-albanian-name
 
 A small function to check if a given name is albanian
